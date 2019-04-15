@@ -5,6 +5,15 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyForNull: `en`,
+        langKeyDefault: `en`,
+        useLangKeyLayout: false,
+        prefixDefault: false,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -11,6 +11,8 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
+        display: `flex`,
+        alignItems: `center`,
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
@@ -27,6 +29,27 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+
+      <Link
+        to="/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+          marginLeft: `auto`,
+        }}
+      >
+        EN
+      </Link>
+      <Link
+        to="/cn/"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+          marginLeft: 10,
+        }}
+      >
+        CN
+      </Link>
     </div>
   </header>
 )
