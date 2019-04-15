@@ -1,36 +1,93 @@
-backend:
-  name: test-repo
-
-media_folder: static/assets
-public_folder: assets
-
-collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/index.en.md"
-        label: "Home Page (EN)"
-        name: "index-en"
-        fields:
-          - { label: "SEO Title", name: seoTitle, widget: string }
-          - { label: "Heading", name: heading, widget: string }
-          - { label: "Redirect Button Text", name: redirectButtonText, widget: string }
-      - file: "src/pages/index.cn.md"
-        label: "Home Page (CN)"
-        name: "index-cn"
-        fields:
-          - { label: "SEO Title", name: seoTitle, widget: string }
-          - { label: "Heading", name: heading, widget: string }
-          - { label: "Redirect Button Text", name: redirectButtonText, widget: string }
-      - file: "src/pages/about/index.en.md"
-        label: "About Page (EN)"
-        name: "about-en"
-        fields:
-          - { label: "SEO Title", name: seoTitle, widget: string }
-          - { label: "Redirect Button Text", name: redirectButtonText, widget: string }
-      - file: "src/pages/about/index.cn.md"
-        label: "About Page (CN)"
-        name: "about-cn"
-        fields:
-          - { label: "SEO Title", name: seoTitle, widget: string }
-          - { label: "Redirect Button Text", name: redirectButtonText, widget: string }
+{
+  "backend": {
+    "name": "test-repo"
+  },
+  "media_folder": "static/assets",
+  "public_folder": "assets",
+  "collections": [
+    {
+      "name": "pages",
+      "label": "Pages",
+      "files": [
+        {
+          "file": "src/pages/index.en.md",
+          "label": "Home Page (EN)",
+          "name": "index-en",
+          "fields": [
+            {
+              "label": "SEO Title",
+              "name": "seoTitle",
+              "widget": "string"
+            },
+            {
+              "label": "Heading",
+              "name": "heading",
+              "widget": "string"
+            },
+            {
+              "label": "Redirect Button Text",
+              "name": "redirectButtonText",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "file": "src/pages/index.cn.md",
+          "label": "Home Page (CN)",
+          "name": "index-cn",
+          "fields": [
+            {
+              "label": "SEO Title",
+              "name": "seoTitle",
+              "widget": "string"
+            },
+            {
+              "label": "Heading",
+              "name": "heading",
+              "widget": "string"
+            },
+            {
+              "label": "Redirect Button Text",
+              "name": "redirectButtonText",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "file": "src/pages/about/index.en.md",
+          "label": "About Page (EN)",
+          "name": "about-en",
+          "fields": [
+            {
+              "label": "SEO Title",
+              "name": "seoTitle",
+              "widget": "string"
+            },
+            {
+              "label": "Redirect Button Text",
+              "name": "redirectButtonText",
+              "widget": "string"
+            }
+          ]
+        },
+        {
+          "file": "src/pages/about/index.cn.md",
+          "label": "About Page (CN)",
+          "name": "about-cn",
+          "fields": [
+            {
+              "label": "SEO Title",
+              "name": "seoTitle",
+              "widget": "string"
+            },
+            {
+              "label": "Redirect Button Text",
+              "name": "redirectButtonText",
+              "widget": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
