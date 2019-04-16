@@ -1,6 +1,7 @@
 ---
 templateKey: home-page
-seoTitle: Homepage
+metaTitle: Homepage
+metaDescription: ""
 heading: Hello World
 redirectButtonText: Go to about page
 ---

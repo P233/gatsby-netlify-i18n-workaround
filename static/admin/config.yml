@@ -15,9 +15,21 @@
           "name": "index-en",
           "fields": [
             {
-              "label": "SEO Title",
-              "name": "seoTitle",
-              "widget": "string"
+              "label": "Metadata",
+              "name": "metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "label": "Meta Title",
+                  "name": "metaTitle",
+                  "widget": "string"
+                },
+                {
+                  "label": "Meta Description",
+                  "name": "metaDescription",
+                  "widget": "string"
+                }
+              ]
             },
             {
               "label": "Heading",
@@ -37,9 +49,21 @@
           "name": "index-cn",
           "fields": [
             {
-              "label": "SEO Title",
-              "name": "seoTitle",
-              "widget": "string"
+              "label": "Metadata",
+              "name": "metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "label": "Meta Title",
+                  "name": "metaTitle",
+                  "widget": "string"
+                },
+                {
+                  "label": "Meta Description",
+                  "name": "metaDescription",
+                  "widget": "string"
+                }
+              ]
             },
             {
               "label": "Heading",
@@ -59,9 +83,21 @@
           "name": "about-en",
           "fields": [
             {
-              "label": "SEO Title",
-              "name": "seoTitle",
-              "widget": "string"
+              "label": "Metadata",
+              "name": "metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "label": "Meta Title",
+                  "name": "metaTitle",
+                  "widget": "string"
+                },
+                {
+                  "label": "Meta Description",
+                  "name": "metaDescription",
+                  "widget": "string"
+                }
+              ]
             },
             {
               "label": "Redirect Button Text",
@@ -76,9 +112,21 @@
           "name": "about-cn",
           "fields": [
             {
-              "label": "SEO Title",
-              "name": "seoTitle",
-              "widget": "string"
+              "label": "Metadata",
+              "name": "metadata",
+              "widget": "object",
+              "fields": [
+                {
+                  "label": "Meta Title",
+                  "name": "metaTitle",
+                  "widget": "string"
+                },
+                {
+                  "label": "Meta Description",
+                  "name": "metaDescription",
+                  "widget": "string"
+                }
+              ]
             },
             {
               "label": "Redirect Button Text",

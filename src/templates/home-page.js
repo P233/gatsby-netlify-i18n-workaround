@@ -24,12 +24,16 @@ const HomePage = ({
   data: {
     markdownRemark: {
       fields: { langKey },
-      frontmatter: { seoTitle, heading, redirectButtonText },
+      frontmatter: { metaTitle, metaDescription, heading, redirectButtonText },
     },
   },
 }) => (
   <Layout>
-    <SEO title={seoTitle} keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title={metaTitle}
+      description={metaDescription}
+      keywords={[`gatsby`, `application`, `react`]}
+    />
     <HomePageTemplate
       heading={heading}
       redirectButtonText={redirectButtonText}
@@ -58,7 +62,8 @@ export const pageQuery = graphql`
         langKey
       }
       frontmatter {
-        seoTitle
+        metaTitle
+        metaDescription
         heading
         redirectButtonText
       }

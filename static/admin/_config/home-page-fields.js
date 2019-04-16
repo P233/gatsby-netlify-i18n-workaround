@@ -1,9 +1,5 @@
 module.exports = [
-  {
-    label: "SEO Title",
-    name: "seoTitle",
-    widget: "string",
-  },
+  require("./metadata-fields"),
   {
     label: "Heading",
     name: "heading",

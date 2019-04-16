@@ -1,5 +1,6 @@
 ---
 templateKey: about-page
-seoTitle: About
+metaTitle: About
+metaDescription: ""
 redirectButtonText: Go to home page
 ---
