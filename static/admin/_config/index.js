@@ -9,6 +9,18 @@ const generatePageConfig = (fileDirectory, label, name, fields) => {
   }))
 }
 
+const generateBlogConfig = () => {
+  return languageList.map(langKey => ({
+    name: `blog-${langKey}`,
+    label: `Blog (${langKey.toUpperCase()})`,
+    folder: "src/pages/blog/",
+    create: true,
+    extension: `${langKey}.md`,
+    format: "frontmatter",
+    fields: require("./blog-fields"),
+  }))
+}
+
 const configOutput = {
   backend: {
     name: "test-repo",
@@ -16,6 +28,7 @@ const configOutput = {
   media_folder: "static/assets",
   public_folder: "assets",
   collections: [
+    ...generateBlogConfig(),
     {
       name: "pages",
       label: "Pages",
@@ -42,6 +55,6 @@ require("fs").writeFile(
   JSON.stringify(configOutput, null, 2),
   err => {
     if (err) throw err
-    console.log("Successfully write the Netlify config.yml file.")
+    console.log("Successfully generated the Netlify config.yml file.")
   }
 )
